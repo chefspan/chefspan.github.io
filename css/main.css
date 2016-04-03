@@ -1,0 +1,65 @@
+body { 
+	background-color: lemonchiffon; 
+	width: 100%; 
+	margin:0 auto; 
+	padding: 0; 
+	color: #6498ae;
+}
+
+/*Navbar*/
+.navbar-brand img { 
+        display: inline-block; 
+        width: 40px; 
+        height: 40px; 
+        margin-right: 10px; 
+}
+
+.navbar { 
+	background-color: #6498ae;
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+}
+
+.navbar.navbar-default a {
+	color: lemonchiffon;
+}
+
+/*Carousel*/
+.carousel .item {
+        max-height: 750px; 
+}
+
+.carousel img {
+        width: 100%; 
+}
+
+#home-text {
+	text-align: center;
+        padding-bottom: 50px;
+}
+
+.container-outer {
+        position: relative;
+	background: #fffded url("../img/cream-bg.jpg") no-repeat center;
+}
+
+.border-badge {
+        position: absolute;
+        width: 215px;
+        height: 60px;
+        left: 0;
+        right: 0;
+        top: -33px;
+        margin: 0 auto;
+}
+
+.border-badge img {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+#gallery {
+        border-top: 5px solid #6498ae;
+        border-bottom: 5px solid #6498ae;
+}
