@@ -1,5 +1,5 @@
 body { 
-	background-color: lemonchiffon; 
+	background-color: #6498ae; 
 	width: 100%; 
 	margin:0 auto; 
 	padding: 0; 
@@ -7,6 +7,17 @@ body {
 }
 
 /*Navbar*/
+.navbar {
+        background: #6498ae url("../img/blue-bg.jpg") no-repeat center;
+        border: 0px;
+        border-radius: 0px;
+        height: 70px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #6498ae;
+}
+
 .navbar-brand img { 
         display: inline-block; 
         width: 40px; 
@@ -25,6 +36,28 @@ body {
 	color: lemonchiffon;
 }
 
+.navbar li a {
+        color: white;
+}
+
+.navbar-nav li.active a {
+        background-color: transparent;
+}
+
+.navbar-nav li a:hover {
+        background-color: transparent;
+        color: lemonchiffon;
+}
+
+.navbar li.active {
+        padding-top: 2px solid;
+        border-top-color: lemonchiffon;
+}
+
+.navbar li.active a h4 {
+        color: lemonchiffon;
+}
+
 /*Carousel*/
 .carousel .item {
         max-height: 750px; 
@@ -41,7 +74,10 @@ body {
 
 .container-outer {
         position: relative;
-	background: #fffded url("../img/cream-bg.jpg") no-repeat center;
+}
+
+#home {
+        background: #6498ae url("../img/cream-bg.jpg") center;
 }
 
 .border-badge {
@@ -62,4 +98,51 @@ body {
 #gallery {
         border-top: 5px solid #6498ae;
         border-bottom: 5px solid #6498ae;
+}
+
+#hungry {
+        background: #6498ae url("../img/menu-bg.jpg");
+}
+
+#hungry .container {
+        padding-top: 50px;
+}
+
+#hungry-header {
+        text-align: center;
+}
+
+#hungry li.list-group-item {
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #ddd;
+    color: #eee;
+}
+
+#hungry .nav-tabs {
+    border: none;
+}
+
+#hungry li.list-group-item h4 {
+    font-size: 24px;
+}
+
+#hungry .nav-tabs li.active a {
+    background-color: transparent;
+    border: none;
+}
+
+#hungry .nav-tabs li a {
+    color: #eee;
+}
+
+#hungry .list-group-item-heading {
+    margin-top: 5px;
+    margin-bottom:15px;
+}
+
+#hungry .list-group-item-text {
+    font-size: 16px;
+    margin-bottom:10px;
 }

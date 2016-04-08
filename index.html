@@ -10,6 +10,7 @@
         <meta name="description" content="">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
         <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -24,7 +25,7 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
        	
-   	<nav class="navbar navbar-default">
+   	<nav class="navbar">
 	  <div  id="navbar" class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -34,19 +35,19 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Chef's Pan</a>
+	      <a class="navbar-brand" href="#"><h4>Chef's Pan</h4></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#gallery">Gallery</a></li>
-	        <li><a href="#hungry">Hungry?</a></li>
-	        <li><a href="#catering">Catering</a></li>
+	        <li class="active"><a href="#home"><h4>Home</h4><span class="sr-only">(current)</span></a></li>
+	        <li><a href="#gallery"><h4>Gallery</h4></a></li>
+	        <li><a href="#hungry"><h4>Hungry?</h4></a></li>
+	        <li><a href="#locations"><h4>Find Us</h4></a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#story">Our Story</a></li>
+	        <li><a href="#story"><h4>Our Story</h4></a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -56,43 +57,49 @@
 		<div id="home">
 			<div id="home-carousel" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
+			  <!-- <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
+			  </ol> -->
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
+			      <img src="./img/food_truck.jpg" alt="Food Truck">
+			      <!-- <div class="carousel-caption">
+			        <h3>Food Truck</h3>
+			      </div> -->
+			    </div>
+			    <div class="item">
 			      <img src="./img/pasta_toast.jpg" alt="Arrabiata Pasta with Garlic Bread">
-			      <div class="carousel-caption">
+			      <!-- <div class="carousel-caption">
 			        <h3>Arrabiata Pasta with Garlic Bread</h3>
-			      </div>
+			      </div> -->
 			    </div>
 			    <div class="item">
 			      <img src="./img/lamington.jpg" alt="Lamington with Caramel Sauce">
-			      <div class="carousel-caption">
+			      <!-- <div class="carousel-caption">
 			        <h3>Lamington with Caramel Sauce</h3>
-			      </div>
+			      </div> -->
 			    </div>
 			    <div class="item">
 			      <img src="./img/panini.jpg" alt="Tomata Mozzarella & Basil Pesto">
-			      <div class="carousel-caption">
+			      <!-- <div class="carousel-caption">
 			        <h3>Tomata Mozzarella & Basil Pesto</h3>
-			      </div>
+			      </div> -->
 			    </div>
 			  </div>
 
 			  <!-- Controls -->
-			  <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
+			  <!-- <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
 			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			    <span class="sr-only">Previous</span>
 			  </a>
 			  <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next">
 			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			    <span class="sr-only">Next</span>
-			  </a>
+			  </a> -->
 			</div>
 
 			<div class="container-outer">
@@ -158,8 +165,8 @@
 					<img src="./img/hand-made-with-heart.svg">
 				</div>
 				<div class="container">
-					<div class="row">
-						<h3 class="col-md-11 col-md-offset-1">QUICK BITES</h3>
+					<!-- <div class="row">
+						<h3 id="hungry-header">QUICK BITES</h3>
 					</div>
 					<div class="row">
 					  <div class="col-xs-6 col-md-3">
@@ -174,26 +181,121 @@
 
 					  <div class="col-xs-6 col-md-3">
 					    <div class="thumbnail">
-					      <img src="./img/garlic_bread.jpg" alt="garlic bread">
+					      <img src="./img/potato-wedge.jpg" alt="garlic bread">
 					      <div class="caption">
-					        <h3>Garlic Bread</h3>
-					        <p>Garlic Bread with cheese, onions and green chilies</p>
+					        <h3>Potato Wedges<span class="pull-right">Rs. 40</span></h3>
+					        <p>Chatpata potato wedges served with mayo</p>
 					      </div>
 					    </div>
 					  </div>
 
 					  <div class="col-xs-6 col-md-3">
 					    <div class="thumbnail">
-					      <img src="./img/garlic_bread.jpg" alt="garlic bread">
+					      <img src="./img/french-fries.jpeg" alt="garlic bread">
 					      <div class="caption">
-					        <h3>Garlic Bread</h3>
-					        <p>Garlic Bread with cheese, onions and green chilies</p>
+					        <h3>French Fries<span class="pull-right">Rs. 40</span></h3>
+					        <p>Crispy tasty cheesy fries</p>
 					      </div>
 					    </div>
 					  </div>
+					</div> -->
+
+					<div>
+
+					  <h1>MENU</h1>
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#menu-bites" aria-controls="menu-bites" role="tab" data-toggle="tab">Quick Bites</a></li>
+					    <li role="presentation"><a href="#menu-pasta" aria-controls="menu-pasta" role="tab" data-toggle="tab">Pasta</a></li>
+					    <li role="presentation"><a href="#menu-panini" aria-controls="menu-panini" role="tab" data-toggle="tab">Panini</a></li>
+					    <li role="presentation"><a href="#menu-desserts" aria-controls="menu-desserts" role="tab" data-toggle="tab">Desserts</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active" id="menu-bites">
+					    	<div class="col-md-6">
+					    		<div class="list-group">
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Garlic Bread<span class="pull-right">Rs. 40</span></h4>
+								    <p class="list-group-item-text">Garlic Bread with cheese, onions and green chilies</p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Potato Wedges<span class="pull-right">Rs. 40</span></h4>
+								    <p class="list-group-item-text">Chatpata potato wedges served with mayo</p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">French Fries<span class="pull-right">Rs. 40</span></h4>
+								    <p class="list-group-item-text">Crispy tasty cheesy fries</p>
+								  </li>
+								</div>
+					    	</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="menu-pasta">
+					    	<div class="col-md-6">
+					    		<div class="list-group">
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Pesto<span class="pull-right">Rs. 100/130</span></h4>
+								    <p class="list-group-item-text">Vegetable stock gives this pesto a special twist. Topped with parmesan cheese</p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Alfredo<span class="pull-right">Rs. 100/130</span></h4>
+								    <p class="list-group-item-text">Includes more grated parmesan cheeese and fresh garlic</p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Arrabiata<span class="pull-right">Rs. 100/130</span></h4>
+								    <p class="list-group-item-text">Spicy sauce for pasta made from garlic, tomatoes and red chilli peppers cooked in olive oil</p>
+								  </li>
+								</div>
+					    	</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="menu-panini"><div class="col-md-6">
+					    		<div class="list-group">
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Tomato, Mozzarella & Basil Pesto<span class="pull-right">Rs. 100</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">BBQ Paneer Steak<span class="pull-right">Rs. 100</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Char grilled Chicken Pesto<span class="pull-right">Rs. 110</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Classic Egg Mayonnaise<span class="pull-right">Rs. 70</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								</div>
+					    	</div></div>
+					    <div role="tabpanel" class="tab-pane fade" id="menu-desserts">
+					    	<div class="col-md-6">
+					    		<div class="list-group">
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Doughnut with Cinnamon Sugar Coated<span class="pull-right">Rs. 30</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Doughnut with Chocolate<span class="pull-right">Rs. 40</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								  <li class="list-group-item">
+								    <h4 class="list-group-item-heading">Lamington with Caramel Sauce<span class="pull-right">Rs. 40</span></h4>
+								    <p class="list-group-item-text"></p>
+								  </li>
+								</div>
+					    	</div>
+					    </div>
+					  </div>
+
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div id="locations">
+			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zvecbTJ6D42w.k_oHj6KctLSM" width="640" height="480"></iframe>
 		</div>
 
 	</div>
