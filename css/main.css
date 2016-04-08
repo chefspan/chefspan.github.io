@@ -32,8 +32,8 @@ body {
 	width: 100%;
 }
 
-.navbar.navbar-default a {
-	color: lemonchiffon;
+.navbar a {
+	color: white;
 }
 
 .navbar li a {
@@ -131,10 +131,18 @@ body {
 #hungry .nav-tabs li.active a {
     background-color: transparent;
     border: none;
+    color: #6498ae;
 }
 
 #hungry .nav-tabs li a {
     color: #eee;
+    font-size: 24px;
+}
+
+#hungry .nav-tabs li a:hover {
+    background-color: transparent;
+    border: 0px;
+    color: #53879d;
 }
 
 #hungry .list-group-item-heading {
