@@ -8,10 +8,10 @@ body {
 
 /*Navbar*/
 .navbar {
-        background: #6498ae url("../img/blue-bg.jpg") no-repeat center;
-        border: 0px;
-        border-radius: 0px;
-        height: 70px;
+    background: #6498ae url("../img/blue-bg.jpg") no-repeat center;
+    border: 0px;
+    border-radius: 0px;
+    height: 70px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -19,10 +19,10 @@ body {
 }
 
 .navbar-brand img { 
-        display: inline-block; 
-        width: 40px; 
-        height: 40px; 
-        margin-right: 10px; 
+    display: inline-block; 
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
 }
 
 .navbar { 
@@ -37,79 +37,83 @@ body {
 }
 
 .navbar li a {
-        color: white;
+    color: white;
 }
 
 .navbar-nav li.active a {
-        background-color: transparent;
+    background-color: transparent;
 }
 
 .navbar-nav li a:hover {
-        background-color: transparent;
-        color: lemonchiffon;
+    background-color: transparent;
+    color: lemonchiffon;
 }
 
 .navbar li.active {
-        padding-top: 2px solid;
-        border-top-color: lemonchiffon;
+    padding-top: 2px solid;
+    border-top-color: lemonchiffon;
 }
 
 .navbar li.active a h4 {
-        color: lemonchiffon;
+    color: lemonchiffon;
 }
 
 /*Carousel*/
 .carousel .item {
-        max-height: 750px; 
+    max-height: 750px; 
 }
 
 .carousel img {
-        width: 100%; 
+    width: 100%; 
 }
 
 #home-text {
 	text-align: center;
-        padding-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 .container-outer {
-        position: relative;
+    position: relative;
 }
 
 #home {
-        background: #6498ae url("../img/cream-bg.jpg") center;
+    background: #6498ae url("../img/cream-bg.jpg") center;
 }
 
 .border-badge {
-        position: absolute;
-        width: 215px;
-        height: 60px;
-        left: 0;
-        right: 0;
-        top: -33px;
-        margin: 0 auto;
+    position: absolute;
+    width: 215px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    top: -33px;
+    margin: 0 auto;
 }
 
 .border-badge img {
-        display: inline-block;
-        vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #gallery {
-        border-top: 5px solid #6498ae;
-        border-bottom: 5px solid #6498ae;
+    border-top: 5px solid #6498ae;
+    border-bottom: 5px solid #6498ae;
 }
 
 #hungry {
-        background: #6498ae url("../img/menu-bg.jpg");
+    background: #6498ae url("../img/menu-bg.jpg");
 }
 
 #hungry .container {
-        padding-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 #hungry-header {
-        text-align: center;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 30px;
 }
 
 #hungry li.list-group-item {
@@ -131,18 +135,18 @@ body {
 #hungry .nav-tabs li.active a {
     background-color: transparent;
     border: none;
-    color: #6498ae;
+    color: #eee;
 }
 
 #hungry .nav-tabs li a {
-    color: #eee;
+    color: #6498ae;
     font-size: 24px;
 }
 
 #hungry .nav-tabs li a:hover {
     background-color: transparent;
     border: 0px;
-    color: #53879d;
+    color: #ddd;
 }
 
 #hungry .list-group-item-heading {
