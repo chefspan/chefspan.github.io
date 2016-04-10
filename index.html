@@ -25,7 +25,7 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
        	
-   	<nav class="navbar">
+   	<nav class="navbar navbar-default">
 	  <div  id="navbar" class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -35,7 +35,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#"><h4>Chef's Pan</h4></a>
+	      <a class="navbar-brand" href="#"><h3>Chef's Pan</h3></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -159,7 +159,7 @@
 			</div>
 		</div>
 
-		<div id="hungry">
+		<div id="hungry" class="dark-bg">
 			<div class="container-outer">
 				<div class="border-badge">
 					<img src="./img/hand-made-with-heart.svg">
@@ -298,19 +298,43 @@
 			</div>
 		</div>
 
-		<div id="locations">
-			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zvecbTJ6D42w.k_oHj6KctLSM" width="640" height="480"></iframe>
+		<div id="locations" class="dark-bg">
+			<!-- <div class="container"> -->
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zvecbTJ6D42w.k_oHj6KctLSM"></iframe>
+			<!-- </div> -->
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="location-text">
+						<h1>Pimple Nilakh</h1>
+						<p>New DP Rd., Late Chandrakant Raoji Jagtap Rd.</p>
+						<p>Pune Maharashtra, 411021</p>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="location-text">
+						<h1>Hinjewadi</h1>
+						<p>Near Bhujbal Chawk, Besides flyover</p>
+						<p>Pune Maharashtra, 411057</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
 
 	<script type="text/javascript">
 	$(document).ready(function() {
-		/*$('.carousel img').each(function(){
-			console.log($(this));
-		  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
-		  $(this).addClass(imgClass);
-		});*/
+		$('#locations iframe').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#locations').on('click', function () {
+            $('#locations iframe').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#locations iframe").mouseleave(function () {
+            $('#locations iframe').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
 	});
 	</script>
 	</body>
