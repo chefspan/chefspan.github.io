@@ -3,7 +3,6 @@ body {
 	width: 100%; 
 	margin:0 auto; 
 	padding: 0; 
-	color: #6498ae;
 }
 
 /*Navbar*/
@@ -108,6 +107,7 @@ body {
 	text-align: center;
     padding-bottom: 50px;
     padding-top: 30px;
+    color: #6498ae;
 }
 
 .container-outer {
@@ -151,6 +151,7 @@ body {
     text-align: center;
     font-size: 60px;
     padding-bottom: 30px;
+    color: #6498ae;
 }
 
 #hungry li.list-group-item {
@@ -196,10 +197,6 @@ body {
     margin-bottom:10px;
 }
 
-#locations {
-    background-color: #fffded;
-}
-
 #locations iframe {
     width: 100%;
     height: 480px;
@@ -211,12 +208,32 @@ body {
     border-radius: 10px;
     border: 1px solid #eee;
     color: #eee;
-}
-
-#locations .well {
-    background-color: transparent;
+    box-shadow: 3px 3px 10px #aaa;
 }
 
 .scrolloff {
     pointer-events: none;
+}
+
+/* Catering */
+.light-bg {
+    background-color: #fffded;
+    color: #6498ae;
+}
+
+#catering {
+    text-align: center;
+    border-top: 5px solid #6498ae;
+    border-bottom: 5px solid #6498ae;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+#catering h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+#catering p {
+    font-size: 24px;
 }
