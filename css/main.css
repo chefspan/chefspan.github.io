@@ -82,18 +82,6 @@ body {
 
 }
 
-/*@media (max-width: 768px)
-.navbar {
-    height: 50px;
-    background: none !important;
-}*/
-
-/*@media (max-width: 768px)
-.navbar-nav li a{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}*/
-
 /*Carousel*/
 .carousel .item {
     max-height: 750px; 
@@ -110,12 +98,25 @@ body {
     color: #6498ae;
 }
 
+#container {
+    padding-top: 50px;
+}
+
 .container-outer {
     position: relative;
 }
 
 #home {
     background: #6498ae url("../img/cream-bg.jpg") center;
+}
+
+#home .section-header {
+    font-size: 36px;
+    padding-top: 30px;
+}
+
+#home img {
+    height: 180px;
 }
 
 .border-badge {
@@ -147,10 +148,8 @@ body {
     padding-bottom: 50px;
 }
 
-#hungry-header {
+#hungry .section-header {
     text-align: center;
-    font-size: 60px;
-    padding-bottom: 30px;
     color: #6498ae;
 }
 
@@ -224,16 +223,38 @@ body {
 #catering {
     text-align: center;
     border-top: 5px solid #6498ae;
-    border-bottom: 5px solid #6498ae;
+    /*border-bottom: 5px solid #6498ae;*/
     padding-top: 60px;
     padding-bottom: 50px;
 }
 
-#catering h1 {
+.section-header {
+    text-align: center;
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
-#catering p {
+.section-content {
+    text-align: justify;
     font-size: 24px;
+}
+
+.section-content p {
+    margin-bottom: 25px;
+}
+
+/* Social */
+#social {
+    color: #eee;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.dark-bg2 {
+    background: #6498ae url("../img/chalkboard-bg.jpg");
+}
+
+#social p {
+    font-size: 24px;
+    margin-bottom: 25px;
 }
