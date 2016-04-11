@@ -135,7 +135,7 @@ body {
     vertical-align: middle;
 }
 
-#gallery {
+#gallery-carousel {
     border-top: 5px solid #6498ae;
     border-bottom: 5px solid #6498ae;
 }
@@ -258,4 +258,11 @@ body {
 #social p {
     font-size: 24px;
     margin-bottom: 25px;
+}
+
+.social-link {
+    margin: 30px;
+}
+.social-icon {
+    height: 90px;
 }
