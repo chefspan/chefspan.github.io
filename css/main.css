@@ -4,6 +4,8 @@ body {
 	margin:0 auto; 
 	padding: 0; 
     font-family: "BloggerSans",Georgia;
+    /*font-family: 'brandon-grotesque', sans-serif*/
+    /*-webkit-font-smoothing: antialiased;*/
 }
 
 /*Navbar*/
@@ -92,6 +94,10 @@ body {
     width: 100%; 
 }
 
+.small-font {
+    font-size: 18px;
+}
+
 #home-text {
 	text-align: center;
     padding-bottom: 50px;
@@ -160,6 +166,16 @@ body {
     border-right: 0px;
     border-bottom: 1px solid #ddd;
     color: #eee;
+}
+
+#hungry .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#hungry .list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 #hungry .nav-tabs {
@@ -256,13 +272,44 @@ body {
 }
 
 #social p {
+    text-align: center;
     font-size: 24px;
     margin-bottom: 25px;
 }
 
-.social-link {
-    margin: 30px;
+.social-links {
+    text-align: center;
+    margin-top: 60px;
 }
+
+.social-links a {
+    margin: 10px;
+}
+
 .social-icon {
-    height: 90px;
+    height: 45px;
+}
+
+#story {
+    padding-top: 60px;
+}
+
+#story .list-group-item {
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#story a.list-group-item {
+    color: #6498ae;
+}
+
+#story .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#story .list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
